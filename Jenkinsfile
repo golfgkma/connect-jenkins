@@ -27,7 +27,7 @@ pipeline {
         stage('Copy') {
             steps {
                 echo 'Installing requirements...'
-                cp 'README.md' /var/
+                cp README.md /var/
             }
         }
     }
