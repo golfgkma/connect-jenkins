@@ -27,8 +27,8 @@ pipeline {
         stage('Copy') {
             steps {
                 echo 'Installing requirements...'
-                sh 'chown -R root:jenkins /var'
-                sh "cp -f README.md /var/"
+                sh 'chown -R root:jenkins /var/www/html/wp-content/plugins/lotto-system/'
+                sh "cp -f README.md /var/www/html/wp-content/plugins/lotto-system/"
             }
         }
     }
